@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Zhansaya Askar">
+  <title>Zhansaya Askar — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with navigation -->
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Switch theme" aria-pressed="false">🌙</button>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- About section -->
+    <section id="about">
+      <h1>Zhansaya Askar</h1>
+      <img src="avatar1.jpg" alt="Photo of Zhansaya Askar" width="150" height="150">
+      <p>
+        I'm Zhansaya — a 3rd year IT Management student at KBTU.
+        I enjoy learning, exploring new ideas and working on university projects.
+      </p>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <article>
+          <h3>HTML Profile Page</h3>
+          <p>
+            A static page with semantic sections (About, Skills, Goals, Contact),
+            a top navigation menu and a contact form with labels. Built to practise
+            HTML5 structure and anchors.
+          </p>
+          <a href="https://github.com/ZhansayaAskar/iwamad-practice/tree/week-01" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+        <article>
+          <h3>Responsive Profile Card</h3>
+          <p>
+            An Instagram-style profile card styled with hand-written CSS and Tailwind.
+            Uses Flexbox, a custom type scale, a working Like button in vanilla
+            JavaScript and a Vite dev environment.
+          </p>
+          <a href="https://github.com/ZhansayaAskar/iwamad-practice/tree/week-02" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+        <article>
+          <h3>React Profile Card</h3>
+          <p>
+            The same card rebuilt as a React + TypeScript app: split into components
+            with typed props, a Like button using useState, and a skills list rendered
+            with .map(). Published on GitHub Pages.
+          </p>
+          <a href="https://github.com/ZhansayaAskar/iwamad-practice/tree/week-03" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+        <article>
+          <h3>Multi-page React App</h3>
+          <p>
+            A small React app with routing: Home, Skills, Contact and a custom 404 page
+            inside a shared layout. State is managed with React Context, and the Like
+            button has a unit test written with Vitest and React Testing Library.
+          </p>
+          <a href="https://github.com/ZhansayaAskar/iwamad-practice/tree/week-04" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact section with form -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <span id="name-error" class="error"></span>
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <span id="email-error" class="error"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
+        <span id="message-error" class="error"></span>
+
+        <button type="submit">Send</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Zhansaya Askar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
